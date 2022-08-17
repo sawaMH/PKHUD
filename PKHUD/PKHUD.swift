@@ -129,6 +129,8 @@ open class PKHUD: NSObject {
         }
         if dimsBackground {
             container.showBackground(animated: true)
+        } else {
+            container.hideBackground(animated: false)
         }
 
         // If the grace time is set, postpone the HUD display
